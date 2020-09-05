@@ -1,0 +1,17 @@
+// Makes each function easier to read on console.
+var end = "end"; // phrase to type into readability() function to console.log end of program statement
+function readability(input) {
+    console.log(
+        "----------------------------------------------------------------------------------------------------"
+    );
+    if (input == "end") {
+        console.log("                                       End of Program");
+    } else if (input !== "end") {
+        // simple check for people entering other variables `end` or nothing at all into the function
+        console.log("                                       Next Function");
+    }
+    console.log(
+        "----------------------------------------------------------------------------------------------------"
+    );
+    return 0;
+}

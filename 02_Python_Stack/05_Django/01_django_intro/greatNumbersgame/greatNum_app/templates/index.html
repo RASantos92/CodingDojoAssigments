@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Number Aame</title>
+
+    <style>
+        * {
+            width: 100%;
+            text-align: center;
+            background-color: silver;
+        }
+    </style>
+
+</head>
+
+
+<body>
+    <div id='container'>
+        <div id='header'>
+            <h1>Welcome to the Great Number Game</h1>
+            <p>I am thinking of a number between 1 and 10</p>
+            <p>Take a guess!</p>
+        </div>
+
+        <div id="middle">
+            <form action="checkNum" method="POST">
+                {% csrf_token %}
+                <div>
+                    <input type="hidden" value="/index">
+                    <!--make type hidden-->
+                    <input type="text" name="userInput" placeholder="take a guess" style="width: 200px;">
+                </div>
+                <div>
+                    <button type="submit" style="max-width: 100px; margin-top: 10px;">Submit</button>
+                </div>
+                <div id="box1">
+                    <input type="text" name="box1" value='CORRECT- GOOD GUESS!'
+                        style="max-width: 750px; margin-top: 50px;">
+                    <p>Your number was: {{ request.userInput }}</p>
+                    <p>My number was: {{ request.session.numGen }}</p>
+                </div>
+                <div id="box2">
+                    <input type="text" name="box2" value="TOO HIGH" style="max-width: 750px;">
+                    <p>Your number was: {{ request.session.userInput }}</p>
+                    <p>My number was: {{ request.session.numGen }} </p>
+                </div>
+                <div id="box3">
+                    <input type="text" name="box3" value="TOO LOW" style="max-width: 750px;">
+                    <p>Your number was: {{ request.session.userInput }}</p>
+                    <p>My number was: {{ request.session.numGen }}</p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    </div>
+
+
+</body>
+
+</html>

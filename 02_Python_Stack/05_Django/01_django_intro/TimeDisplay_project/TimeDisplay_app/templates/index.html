@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time- Display</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <!-- <style>
+        h3{
+            color: blue;
+        }
+    </style> -->
+
+
+</head>
+
+
+
+<body>
+    <div id='container'>
+        <div id="header">
+            <h3><i>Current Date and Time:</i></h3>
+        </div>
+        <div id="info_box">
+            <div>{{ date }}</div>
+            <div>{{ military_time }}</div>
+        </div>
+
+    </div>
+</body>
+
+</html>

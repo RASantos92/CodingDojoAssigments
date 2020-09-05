@@ -1,0 +1,8 @@
+for (var i = 0; i < users.length; i++) {
+    //             string concatenation (basically just glueing strings together)
+    console.log( users[i].name + " - " + users[i].age );
+    // commas for different data pieces:
+    console.log( users[i].name,"-",users[i].age );
+    // format strings:
+    console.log( `${users[i].name} - ${users[i].age}` ) 
+}

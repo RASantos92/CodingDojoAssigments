@@ -1,0 +1,92 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 1px dotted red;
+    font-family: sans-serif;
+}
+
+#wrapper {
+    width: 970px;
+    margin: 0px auto;
+    background-color: rgb(41, 41, 124);
+    color: white;
+}
+#header {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+    #header img{
+    width: 250px;
+    }
+
+#header2 {                /*want to have better spacing*/
+    background-color: rgb(69, 150, 216);
+    width: 900px;
+    margin: 15px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    border-radius: 5px;
+    color: white;
+}
+
+#sidebar {               /*want to have column lined up center*/
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+
+}
+#sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+#main {
+    width: 900px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;    
+}
+#infosection {
+    width: 600px;    
+}
+
+#infosection p{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+#mantra p em{
+    color: yellow;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+footer {
+    background-color: white;
+    color: black;
+    width: 900px;
+    margin: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+#left, #right {
+    color: black;
+}
+p {
+    display: flex;
+    justify-content: center;
+}
+#general a{
+    background-color: rgb(41, 41, 124);
+    background-color: ;
+}

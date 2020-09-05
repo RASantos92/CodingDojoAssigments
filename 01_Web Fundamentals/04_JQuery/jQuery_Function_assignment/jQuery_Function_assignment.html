@@ -1,0 +1,90 @@
+<!-- I feel like this might be a lot of fun to spend time on manipulating.  For each manipulation add an effect caused by an event! -->
+<!-- Sadly right now I must forge ahead so I don't say behind! -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is my jQuery click Demo-PIKE</title>
+
+    <style>
+        #wrapper {
+            margin: 0px auto;
+        }
+
+        #wrapper div {
+            margin: -10px;
+            background-color: darkslategray;
+            display: block;
+            text-align: center;
+        }
+
+        p {
+            color: red;
+            margin: 25px;
+            cursor: pointer;
+        }
+
+        p:hover {
+            background: yellow;
+        }
+
+        button {
+            margin: 25px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+
+
+<body>
+    <wrapper id="wrapper">
+        <div>
+            <h1>AddClass</h1>
+            <p>Click the button to add class 'red' to this paragraph.</p>
+            <button>AddClass</button>
+        </div>
+        <div>
+            <h1>SlideToggle</h1>
+            <p>Click the button to slidetoggle a hidden image.</p>
+            <button>SlideToggle</button>
+        </div>
+        <div>
+            <h1>Append</h1>
+            <p>Click the button to append a new paragraph.</p>
+            <button>Append</button>
+        </div>
+        <div>
+            <h1>Prepend</h1>
+            <p>Click the button to prepend a new paragraph.</p>
+            <button>Prepend</button>
+        </div>
+    </wrapper>
+</body>
+
+<script>
+    $("p").click(function () {
+        $(this).fadeOut(3000);
+    });
+    $("p").click(function () {
+        (this).prepend("My paragraphs ROCK!---");
+    });
+    $("p").click(function () {
+        $(this).fadeIn(750);
+    });
+    
+    $("h1").click(function () {
+        $(this).fadeOut(800);
+    });
+    $("h1").click(function () {
+        $(this).fadeIn(800);
+    });
+    $("button").click(function () {
+        $(this).appendTo("h1", "This appends button to h1");
+    });
+    
+</script>
+
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio Assignment</title>
+    <link rel="stylesheet" type="text/css" href="solution1.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2>Jayne Doe</h2>
+            <h3>Master of Shadows and the Internet</h3>
+        </div>
+        <div class="main_content">
+            <img src="javaScript_portfolio_logos/photo_of_me.jpg">
+            <div class="about_me_section">
+                <h2>About me</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaeca</p>
+                <a href="#">Continue Reading....</a>
+            </div>
+            <div class="projects spacing">
+                <h2>la Mode</h2>
+                <img src="javaScript_portfolio_logos/lamode.png" alt="lamode_pic">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolo</p>
+                <h2>Technologies</h2>
+                <ul class="tech_images">
+                    <li><img src="javaScript_portfolio_logos/php.png"></li>
+                    <li><img src="javaScript_portfolio_logos/codeigniter.png"></li>
+                    <li><img src="javaScript_portfolio_logos/jQuery.png"></li>
+                    <li><img src="javaScript_portfolio_logos/ajax.png"></li>
+                    <li><img src="javaScript_portfolio_logos/sqlite.png"></li>
+                    <li><img src="javaScript_portfolio_logos/HTML.png"></li>
+                    <li><img src="javaScript_portfolio_logos/CSS.png"></li>
+                    <li><img src="javaScript_portfolio_logos/bootstrap.png"></li>
+                </ul>
+                <button>la Mode</button>
+            </div>
+            <div class="projects spacing">
+                <h2>familycontacts</h2>
+                <img src="javaScript_portfolio_logos/familycontacts.png" alt="familycontacts_pic">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolo</p>
+                <h2>Technologies</h2>
+                <ul class="tech_images">
+                    <li><img src="javaScript_portfolio_logos/JavaScript.png"></li>
+                    <li><img src="javaScript_portfolio_logos/mongodb.png"></li>
+                    <li><img src="javaScript_portfolio_logos/expressjs.png"></li>
+                    <li><img src="javaScript_portfolio_logos/angular.png"></li>
+                    <li><img src="javaScript_portfolio_logos/nodejs.png"></li>
+                    <li><img src="javaScript_portfolio_logos/HTML.png"></li>
+                    <li><img src="javaScript_portfolio_logos/CSS.png"></li>
+                    <li><img src="javaScript_portfolio_logos/socket.png"></li>
+                </ul>
+                <button>familycontacts</button>
+            </div>
+            <div class="projects">
+                <h2>fiveEleven</h2>
+                <img src="javaScript_portfolio_logos/fiveEleven.png" alt="fiveEleven_pic">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolo</p>
+                <h2>Technologies</h2>
+                <ul class="tech_images">
+                    <li><img src="javaScript_portfolio_logos/python.png"></li>
+                    <li><img src="javaScript_portfolio_logos/django.png"></li>
+                    <li><img src="javaScript_portfolio_logos/d3.png"></li>
+                    <li><img src="javaScript_portfolio_logos/angular.png"></li>
+                    <li><img src="javaScript_portfolio_logos/sqlite.png"></li>
+                    <li><img src="javaScript_portfolio_logos/HTML.png"></li>
+                    <li><img src="javaScript_portfolio_logos/CSS.png"></li>
+                    <li><img src="javaScript_portfolio_logos/JavaScript.png"></li>
+                    <li><img src="javaScript_portfolio_logos/materialize.png"></li>
+                </ul>
+                <button>fiveEleven</button>
+            </div>
+        </div>
+        <div class="footer">
+            <p>jdoe@gmail.com | 206-555-1212</p>
+            <ul>
+                <li><img src="./images/github.png"><a href="">jaynedev</a></li>
+                <li><img src="./images/linkedin.png"><a href="">jayne-doe</a></li>
+                <li><img src="./images/twitter.png"><a href="">jdtweets</a></li>
+                <li><img src="./images/codepen.png"><a href="">jaynedev</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+*********************************************************************************************************************************************************************************************************************
+THIS IS THE CSS SECTION
+********************************************************************************************************************************************************
+
+body *{
+	padding:0px;
+	margin:0px;
+	font-family: 	Arial;
+}
+
+.wrapper {
+	width:960px;
+	height:1000px;
+}
+.header {
+	width:938px;
+	height: 30px;
+	padding:15px;
+}
+.header h2{
+	display:inline-block;
+	margin-right: 480px;
+}
+.header h3 {
+	display:inline-block;
+}
+.main_content{
+	padding:20px 20px;
+	width:929px;
+	height:870px;
+	background: -webkit-radial-gradient(#6f5964, #1f0f13); /* Safari 5.1- 6.0 */
+  background: -o-radial-gradient(#6f5964, #1f0f13); /* Opera 11.6-12.0 */
+  background: -moz-radial-gradient(#6f5964, #1f0f13); /* Firefox 3.6-15 */
+  background: radial-gradient(#6f5964, #1f0f13); /* Standard syntax */
+}
+.main_content img{
+	margin-bottom: 20px;
+	width:410px;
+	height:auto;
+	border: 5px solid #7d7377;
+}
+.main_content .about_me_section{
+	background: -webkit-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Safari 5.1- 6.0 */
+  background: -o-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Opera 11.6-12.0 */
+  background: -moz-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Firefox 3.6-15 */
+  background: linear-gradient(to bottom right, #fefefe, #dbcbda); /* Standard syntax */
+	width: 500px;
+	display:inline-block;
+	vertical-align: top;
+	height:280px;
+}
+.main_content .about_me_section h2 {
+	padding: 5px 10px;
+	background: -webkit-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Safari 5.1- 6.0 */
+  background: -o-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Opera 11.6-12.0 */
+  background: -moz-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Firefox 3.6-15 */
+  background: linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Standard syntax */
+  color:white;
+}
+.main_content p {
+	margin-bottom: 15px;
+	padding-left: 10px;
+}
+.main_content a{
+	padding-left: 10px;
+}
+.main_content .projects {
+	width:295px;
+	height: 570px;
+	display : inline-block;
+	background-color: lightgray;
+	vertical-align: top;
+	background: -webkit-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Safari 5.1- 6.0 */
+  background: -o-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Opera 11.6-12.0 */
+  background: -moz-linear-gradient(to bottom right, #fefefe, #dbcbda); /* Firefox 3.6-15 */
+  background: linear-gradient(to bottom right, #fefefe, #dbcbda); /* Standard syntax */
+}
+.main_content .projects.spacing {
+	margin-right:15px;
+}
+.projects img, 
+.projects ul {
+	width: 293px;
+	margin:0;
+}
+.projects h2 {
+	width: 273;
+	padding: 5px 10px;
+	color: white;
+	background: -webkit-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Safari 5.1- 6.0 */
+  background: -o-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Opera 11.6-12.0 */
+  background: -moz-linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Firefox 3.6-15 */
+  background: linear-gradient(#bdbdbf, #888694, #bdbdbf); /* Standard syntax */
+}
+.projects img{
+	border:none;
+}
+.project p{
+	width: 278;
+}
+.tech_images {
+	padding:15px 0px 0px 12px;
+}
+.tech_images li{
+	display: inline-block;
+	margin-right:10px;
+}
+.tech_images img{
+	width:40px;
+	height:40px;
+}
+.projects button {
+	background-color: green;
+	color:white;
+	border:solid 1px black;
+	border-radius: 3px;
+	padding: 8px;
+	margin: 10px 100px;
+	font-weight: 900;
+}
+.footer{
+	width:968px;
+	height:50px;
+}
+.footer p
+{
+	margin:auto;
+	width: 240px;
+}
+.footer ul {
+	width: 380px;
+	margin:auto;
+}
+.footer ul li {
+	display:inline-block;
+}
+.footer img {
+	width: 25px;
+	height:auto;
+	margin:auto;
+}
+.footer, .header{
+	background-color: #f9f9f9
+}

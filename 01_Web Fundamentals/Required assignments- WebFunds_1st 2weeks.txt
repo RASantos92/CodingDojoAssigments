@@ -1,0 +1,37 @@
+HTML:
+Indentation Practice
+Registration Form
+Fake Blog
+
+CSS:
+Plotting Your Blocks
+Flex Navbar
+JavaScript Basics
+Portfolio
+
+JavaScript (MANY of these solutions are in our Vimeo folder, go look!):
+Loops Predict
+Loops Algo
+Arrays Predict
+Arrays Algo
+Function Predict
+Basic Foundation I (Do at least 7)
+Basic Foundation II (Do at least 7)
+Playing with Objects
+Pacman
+
+jQuery:
+jQuery Functions
+Disappearing Ninja
+
+MySQL ERDs (Can be hand-drawn):
+Dojos and Ninjas
+Books
+Event Planner
+Blogs
+User Dashboard
+
+MySQL Queries:
+MySQL Workbench Setup
+MySQL Countries (at least half of queries)
+Sakila (at least half of queries)

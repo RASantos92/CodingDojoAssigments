@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-PIKE</title>
+    <link rel="stylesheet" href="portfolio alternate.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Jayne Doe</h1>
+            <p>Master of shadows and the Internet!</p>
+        </div> <!-- header close-->
+        <div id="main">
+            <div id="about">
+                <img src="javaScript_portfolio_logos/photo_of_me.jpg" alt="selfie">
+                <div>
+                    <h2>About...</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus perferendis ratione aut?
+                        Non
+                        labore facilis minima architecto pariatur beatae incidunt? Nam quis corrupti porro, illo unde
+                        laborum minima illum facilis.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur voluptas soluta et
+                        voluptate
+                        sapiente cum nostrum a voluptatibus vero, eius, dolorem minima, numquam natus enim quisquam quo
+                        consequatur repellat. Provident!</p>
+                    <a href="">Continue reading...</a>
+                </div>
+            </div>
+            <!--about close-->
+            <div id="projects">
+                <!-------------------------------------THIS IS MY 1ST COLUMN---------------------------------------------------------------------------->
+                <div>
+                    <h3>La Mode</h3>
+                    <img src="javaScript_portfolio_logos\lamode.png" alt="La Mode">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora labore velit, doloribus harum
+                        voluptatum iusto quibusdam saepe cupiditate hic nulla quo cumque, sed distinctio vel atque
+                        natus, nisi dolorem veritatis?</p>
+                    <h4>Technologies:</h4>
+                    <div>
+                        <img src="javaScript_portfolio_logos/php.png" alt="PHP">
+                        <img src="javaScript_portfolio_logos/codeigniter.png" alt="CodeIgniter">
+                        <img src="javaScript_portfolio_logos/jQuery.png" alt="JQuery">
+                        <img src="javaScript_portfolio_logos/ajax.png" alt="Ajax">
+                        <img src="javaScript_portfolio_logos/mysql.png" alt="MySQL">
+                        <img src="javaScript_portfolio_logos/HTML.png" alt="HTML">
+                        <img src="javaScript_portfolio_logos/CSS.png" alt="CSS">
+                        <img src="javaScript_portfolio_logos/bootstrap.png" alt="bootstrap">
+                    </div>
+                    <button>La Mode</button>
+                </div>
+                <!-------------------------------------THIS IS MY 2ND COLUMN---------------------------------------------------------------------------->
+                <div>
+                    <h3>Family Contacts</h3>
+                    <img src="javaScript_portfolio_logos\familycontacts.png" alt="contacts">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora labore velit, doloribus harum
+                        voluptatum iusto quibusdam saepe cupiditate hic nulla quo cumque, sed distinctio vel atque
+                        natus, nisi dolorem veritatis?</p>
+                    <h4>Technologies:</h4>
+                    <div>
+                        <img src="javaScript_portfolio_logos/JavaScript.png" alt="JavaScript">
+                        <img src="javaScript_portfolio_logos/mongodb.png" alt="mongodb">
+                        <img src="javaScript_portfolio_logos/expressjs.png" alt="expressjs">
+                        <img src="javaScript_portfolio_logos/angular.png" alt="angular">
+                        <img src="javaScript_portfolio_logos/nodejs.png" alt="node">
+                        <img src="javaScript_portfolio_logos/HTML.png" alt="HTML">
+                        <img src="javaScript_portfolio_logos/CSS.png" alt="CSS">
+                        <img src="javaScript_portfolio_logos/socket.png" alt="socket">
+                    </div>
+                    <button>Family Contacts</button>
+                </div>
+                <!-------------------------------------THIS IS MY 3RD COLUMN---------------------------------------------------------------------------->
+                <div>
+                    <h3>fiveEleven</h3>
+                    <img src="javaScript_portfolio_logos\fiveEleven.png" alt="fiveEleven">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora labore velit, doloribus harum
+                        voluptatum iusto quibusdam saepe cupiditate hic nulla quo cumque, sed distinctio vel atque
+                        natus, nisi dolorem veritatis?</p>
+                    <h4>Technologies:</h4>
+                    <div>
+                        <img src="javaScript_portfolio_logos/python.png" alt="python">
+                        <img src="javaScript_portfolio_logos/django.png" alt="django">
+                        <img src="javaScript_portfolio_logos/d3.png" alt="d3">
+                        <img src="javaScript_portfolio_logos/angular.png" alt="angular">
+                        <img src="javaScript_portfolio_logos/sqlite.png" alt="sqlite">
+                        <img src="javaScript_portfolio_logos/HTML.png" alt="HTML">
+                        <img src="javaScript_portfolio_logos/CSS.png" alt="CSS">
+                        <img src="javaScript_portfolio_logos/JavaScript.png" alt="JavaScript">
+                        <img src="javaScript_portfolio_logos/materialize.png" alt="materialize">
+                    </div>
+                    <button>fiveEleven</button>
+                </div>
+                <!---------------------------------------------FOOTER BELOW----------------------------------------------------------------------------->
+            </div>
+        </div>
+        <!--main close-->
+    </div>
+    <!--wrapper close-->
+
+    <div id="footer">
+        <div id="contact">
+            <a href="jdoe@gmails.com">jdoe@gmails.com | 206-555-1212</a>
+        </div>
+        <div id="socialmedia">
+            <img src="javaScript_portfolio_logos\github.png" alt="GitHub">
+            <a href="javaScript_portfolio_logos/github.png"><em>jaynedev</em></a>
+            <img src="javaScript_portfolio_logos\linkedin.png" alt="LinkedIn">
+            <a href="javaScript_portfolio_logos\linkedin.png"><em>jayne-doe</em></a>
+            <img src="javaScript_portfolio_logos\twitter.png" alt="Twitter">
+            <a href="javaScript_portfolio_logos\twitter.png"><em>jdtweeet</em></a>
+            <img src="javaScript_portfolio_logos\codepen.png" alt="Codepen">
+            <a href="javaScript_portfolio_logos\codepen.png"><em>jaynedev</em></a>
+        </div>
+        <!--wrapper close-->
+</body>
+
+</html>
+
+
+*******************************************************************************************************************************************************************************************
+                                                              BELOW IS THE .CSS CODE
+*******************************************************************************************************************************************************************************************
+* {
+  margin: 0px;
+  padding: 0px;
+  /* outline: 1px dotted red; */
+  font-family: sans-serif;
+}
+
+#wrapper {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+#header {
+  background-color: rgb(172, 163, 163);
+  padding: 10px 0px;
+}
+#header h1 {
+  display: inline-block;
+  width: 450px;
+  margin-left: 20px;
+  vertical-align: baseline;
+} /*  CAN COMBINE BOTH H1 AND P-tag LONG AS THE SAME ATTRIBUTES  */
+#header p {
+  display: inline-block;
+  text-align: right;
+  margin-top: 10px;
+  width: 520px;
+}
+
+#main {
+  background-color: maroon;
+  padding: 20px;
+}
+#about img {
+  height: 250px;
+  margin-left: 5px;
+  border: 3px solid gray;
+}
+#about div {
+  background-color: lightgray;
+  width: 540px;
+  height: 255px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+#about div h2,
+#projects div h3,
+h4 {
+  /*Includes #projects h3*/
+  background-color: slategray;
+  color: white;
+  padding: 5px;
+}
+#about div p,
+#about div a {
+  /* can breakout a-tag, &assign it display block w/padding */
+  padding: 12px;
+}
+
+#projects div {
+  margin-top: 20px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 12px;
+}
+#projects div img {
+  width: 300px;
+}
+#projects div p {
+  padding: 6px;
+  margin-top: -6x;
+  background-color: lightgray;
+  height: 125px;
+}
+#projects div div img {
+  width: 40px;
+  margin: 5px;
+  background-color: maroon;
+}
+#projects div button {
+  background-color: teal;
+  padding: 3px;
+  color: white;
+  margin-left: 105px;
+  border-radius: 10%;
+}
+
+#contact {
+  margin-left: 525px;
+}
+#socialmedia img {
+  width: 25px;
+  display: inline-block;
+  margin-left: 175px;
+}

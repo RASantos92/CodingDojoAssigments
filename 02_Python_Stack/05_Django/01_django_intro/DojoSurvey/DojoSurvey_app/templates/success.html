@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static '/success.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="main">
+            <h4><u>Submitted Info</u></h4>
+        </div>
+        <div id="content">
+            <p>Name: {{ name_on_template }}</p>
+            <p>Dojo Location: {{ location_on_template }}</p>
+            <p>Favorite Language: {{ language_on_template }}</p>
+            <p>Comment: {{ comment_on_template }}</p>
+        </div>
+    </div>
+</body>
+
+</html>

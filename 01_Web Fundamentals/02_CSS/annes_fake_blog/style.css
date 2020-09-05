@@ -1,0 +1,31 @@
+* {
+    font-family: fantasy;
+}
+
+body {
+    background-color:darkslategray;
+}
+
+#wrapper {
+    background-color : white ;
+    width : fit-content ;
+    margin : 20px auto ;
+    padding : 20px ;
+}
+
+#header {
+    background-color: black;
+    color :white;
+    border : 10px dotted green ;
+    padding : 10px ;
+    margin-bottom : 20px ;
+}
+
+table {
+    background-color: cyan;
+}
+
+tr {
+    background-color: blueviolet;
+    color:white;
+}

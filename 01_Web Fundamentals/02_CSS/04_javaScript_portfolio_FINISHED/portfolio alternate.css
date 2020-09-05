@@ -1,0 +1,97 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* outline: 1px dotted red; */
+  font-family: sans-serif;
+}
+
+#wrapper {
+  width: 1000px;
+  margin: 0px auto;
+}
+
+#header {
+  background-color: rgb(172, 163, 163);
+  padding: 10px 0px;
+}
+#header h1 {
+  display: inline-block;
+  width: 450px;
+  margin-left: 20px;
+  vertical-align: baseline;
+} /*  CAN COMBINE BOTH H1 AND P-tag LONG AS THE SAME ATTRIBUTES  */
+#header p {
+  display: inline-block;
+  text-align: right;
+  margin-top: 10px;
+  width: 520px;
+}
+
+#main {
+  background-color: maroon;
+  padding: 20px;
+}
+#about img {
+  height: 250px;
+  margin-left: 5px;
+  border: 3px solid gray;
+}
+#about div {
+  background-color: lightgray;
+  width: 540px;
+  height: 255px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 20px;
+}
+#about div h2,
+#projects div h3,
+h4 {
+  /*Includes #projects h3*/
+  background-color: slategray;
+  color: white;
+  padding: 5px;
+}
+#about div p,
+#about div a {
+  /* can breakout a-tag, &assign it display block w/padding */
+  padding: 12px;
+}
+
+#projects div {
+  margin-top: 20px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 12px;
+}
+#projects div img {
+  width: 300px;
+}
+#projects div p {
+  padding: 6px;
+  margin-top: -6x;
+  background-color: lightgray;
+  height: 125px;
+}
+#projects div div img {
+  width: 40px;
+  margin: 5px;
+  background-color: maroon;
+}
+#projects div button {
+  background-color: teal;
+  padding: 3px;
+  color: white;
+  margin-left: 105px;
+  border-radius: 10%;
+}
+
+#contact {
+  margin-left: 525px;
+}
+#socialmedia img {
+  width: 25px;
+  display: inline-block;
+  margin-left: 175px;
+}

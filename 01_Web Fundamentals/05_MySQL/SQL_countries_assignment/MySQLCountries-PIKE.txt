@@ -1,0 +1,43 @@
+1.
+SELECT world.country.name, world.countrylanguage.language, world.countrylanguage.percentage FROM world.countrylanguage
+JOIN world.country ON world.country.code = world.countrylanguage.CountryCode
+WHERE world.countrylanguage.language = 'Slovene'
+ORDER BY world.countrylanguage.percentage DESC;
+
+2.
+select count(world.cities.name) as TotalCities, world.countries.name
+from world.countries join world.cities on world.countries.id = world.cities.country_id
+group by world.countries.name
+order by 1 desc
+
+3.
+select world.cities.name, world.cities.population from world.countries join world.cities on world.countries.id = world.cities.country_id
+where world.countries.name = 'mexico' and world.cities.population > 500000
+order by 2 desc
+
+4.
+select world.countries.name as 'Country', world.languages.language as 'Language', world.languages.percentage as 'Use' from world.countries
+join world.languages on world.countries.id = world.languages.id
+where world.languages.percentage > 89
+order by 3 desc
+
+5.
+select world.countries.name, world.countries.surface_area, world.countries.population from world.countries
+where world.countries.population > 100000 and world.countries.surface_area < 501
+order by 3 desc
+
+6.
+select world.countries.name, world.countries.government_form, world.countries.capital, world.countries.life_expectancy from world.countries
+where government_form = 'constitutional monarchy' and capital > 200 and life_expectancy > 75
+
+7.
+select world.countries.name as country_name, world.cities.district, world.cities.name as city_name, world.cities.population
+from world.countries join world.cities
+on world.countries.id = world.cities.country_id
+where world.countries.name = 'Argentina' and world.cities.district = 'Buenos Aires' and world.cities.population > 500000
+
+8.
+select world.countries.region, count(world.countries.name) as countries
+from world.countries
+group by world.countries.region
+order by 2 desc

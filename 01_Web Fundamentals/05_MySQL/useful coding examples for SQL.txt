@@ -1,0 +1,7 @@
+INSERT INTO table_name (column_name1, column_name2)        //InsertingRecords
+VALUES('column1_value', 'column2_value');
+
+UPDATE table_name SET column_name1 = 'some_value', column_name2='another_value' WHERE condition(s)	//UpdatingRecords
+
+DELETE FROM table_name WHERE condition(s)		//DeletesRecords
+

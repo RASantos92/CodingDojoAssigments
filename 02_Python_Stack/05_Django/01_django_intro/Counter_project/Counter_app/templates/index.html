@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter index</title>
+</head>
+
+<body>
+    <div id="container">
+        <h1><u>Counter</u></h1>
+        <p>You have visited this site {{ request.session.num_visits }} times.</p>
+    </div>
+    <div id="add2">
+        <form action= "/add2" >
+            {%  csrf_token %}
+            <button type="submit">+2</button>
+        </form>
+    </div>
+    <div id="choices">
+        <form action= "/yourchoice" method="POST">
+            {%  csrf_token %}
+            <select name="choice" id="choice">
+                <option value=10>10</option>
+                <option value=20>20</option>
+                <option value=30>30</option>                
+            </select>
+            <button type='submit'>Submit</button>
+        </form>
+    </div>
+    <div id="delete_session">
+        <form action="/destroy_session">
+            {%  csrf_token %}
+            <button type=submit>Reset the World!</button>
+        </form>
+    </div>
+    <div>
+        <h6>User page visits:  {{ request.session.pageview }}   |  Value of counter: {{ request.session.num_visits }}</h6>        
+    </div>
+</body>
+
+</html>
