@@ -2,11 +2,12 @@ import React, { useContext } from 'react';
 import BoxenContext from '../contexts/BoxenContext'
 
 const BoxForm = props => {
-    const { color, setColor, boxen, setBoxen } = useContext(BoxenContext);
-    const handleSubmit = (e) =>{
+    const { color, setColor, size, setSize, boxen, setBoxen } = useContext(BoxenContext);
+    const handleSubmit = (e) => {
         e.preventDefault();
-        setBoxen(banana => [...banana, color]);
+        setBoxen(prevStateBoxen => [...prevStateBoxen, { color: color, size: size }]);
         setColor("");
+        setSize("");
     }
 
     return (
@@ -23,9 +24,20 @@ const BoxForm = props => {
                         value={color}
                     />
                 </div>
+                <div>
+                    <label htmlFor="size">Size: </label>
+                </div>
+                <div>
+                    <input
+                        type="text"
+                        className="form-control"
+                        onChange={(e) => setSize(e.target.value)}
+                        value={size}
+                    />
+                </div>
             </div>
             <input type="submit" value="Add a Box" className="btn btn-warning btn-outline-primary" />
-        </form>
+        </form >
     )
 }
 
