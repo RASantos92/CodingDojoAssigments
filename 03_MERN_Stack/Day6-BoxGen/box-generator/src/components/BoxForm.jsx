@@ -3,6 +3,7 @@ import BoxenContext from '../contexts/BoxenContext'
 
 const BoxForm = props => {
     const { color, setColor, size, setSize, boxen, setBoxen } = useContext(BoxenContext);
+    
     const handleSubmit = (e) => {
         e.preventDefault();
         setBoxen(prevStateBoxen => [...prevStateBoxen, { color: color, size: size }]);

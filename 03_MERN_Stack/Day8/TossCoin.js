@@ -45,7 +45,7 @@ function fiveHeadsSync() {
                 headsCount = 0;
                 if (attempts === 100) {
                     reject(
-                        "Could not get heads to flip five times in a row within 100 trys."
+                        "REJECTED: Could not get heads to flip five times in a row within 100 trys."
                     );
                 }
             }
