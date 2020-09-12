@@ -21,12 +21,12 @@ function App(props) {
         <Link to="/hello/blue/red"><i><p>The word is:</p></i></Link>
       </div>
 
-      <div className="d-flex mx-auto col-6 justify-content-between align-items-center p-2 m-5">
+      <div className="d-flex mx-auto col-6 justify-content-between align-items-center p-3 m-5">
         <Router>
           <HelloWorld path="/home" />
           <Number4 path="/:number" />
           <Hello path="/:word" />
-          <HelloBlueRed path="/:hello/:blue/:red" />
+          <HelloBlueRed path="/:hello/:bgcolor/:textcolor" />
         </Router>
       </div>
     </div>
