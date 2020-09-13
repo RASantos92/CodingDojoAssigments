@@ -32,14 +32,14 @@ function App() {
       <div className="d-flex flex-wrap border border-info rounded m-4">
         {
           names.map((poke, i) => {
-            return <p className="col-3" key={i}>{poke.name}</p>
+            return <p className="col-3" key={i} > {poke.name}</p>
           })
-        }</div>
-    </div>
+        }
+      </div>
+    </div >
   );
 }
 
 export default App;
-
 
 
