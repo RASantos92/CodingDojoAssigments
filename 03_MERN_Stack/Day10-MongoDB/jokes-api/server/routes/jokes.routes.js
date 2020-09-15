@@ -1,11 +1,11 @@
 const JokesControllers = require("../controllers/jokes.controllers");
 
 module.exports = app => {
-  app.get("/api/jokes/", JokesControllers.index);
+  app.get("/api/jokes", JokesControllers.index);
   app.post("/api/jokes/new", JokesControllers.create);
-  // app.get("/api/users/:id", UserController.findOneSingleUser);
-  // app.put("/api/users/update/:id", UserController.updateExistingUser);
-  // app.delete("/api/users/delete/:id", UserController.deleteAnExistingUser);
+  app.get("/api/jokes/show/:id", JokesControllers.show);
+  app.put("/api/jokes/update/:id", JokesControllers.update);
+  app.delete("/api/jokes/destroy/:id", JokesControllers.destroy);
 };
 
 

@@ -1,24 +1,44 @@
+const { request, response } = require("express");
 // const { response, request } = require("express");
 const Joke = require("../models/jokes.model");
 
 module.exports = {
   index: (request, response) => {
+    //Find- will find ALL jokes inside collection
     Joke.find()
-      .then(jokes => {
-        response.json({ results: jokes })
-      })
-      .catch(err => {
-        console.log(err);
-      })
+      .then(jokes => { response.json({ results: jokes }) })
+      .catch(err => { console.log(err); })
   },
   create: (request, response) => {
     Joke.create(request.body)
-      .then(jokes => {
-        response.json({ results: jokes })
-      })
+      .then(jokes => { response.json({ results: jokes }) })
       .catch(err => console.log(err))
-  }
+  },
+  // findOne- will find a particular joke from the collection from(name, _id)
+  show: (request, response) => {
+    Joke.findOne({ _id: request.params.id })
+      .then(jokes => { response.json({ results: jokes }) })
+      .catch(err => console.log(err))
+  },
+  update: (request, response) => {
+    Joke.findOneAndUpdate({ _id: request.params.id }, request.body, { runValidators: true })
+      .then(jokes => {
+        Joke.findOne({ _id: request.params.id })
+          .then(jokes => {
+            response.json({ results: jokes })
+          })
+          .catch(err => response.json(err.errors))
+      })
+      .catch(err => response.json(err.errors))
+  },
+  destroy: (request, response) => {
+    Joke.deleteOne({ _id: request.params.id })
+      .then(result => response.json({ results: result }))
+      .catch(err => response.json({ message: "Something went wrong", error: err }));
+  },
+
 }
+
 
 
 
