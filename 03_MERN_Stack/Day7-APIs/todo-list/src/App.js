@@ -1,4 +1,4 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 import "./App.css"
 import TodoList from './components/TodoList';
 
@@ -12,24 +12,27 @@ import TodoList from './components/TodoList';
 //   7.1- only show if at least one is complete
 // 8- button to toggle all on/off
 
-class App extends Component{
+
+//This was a walkthru from YouTube... Doesn't match assignment perfectly although additional features
+
+class App extends Component {
   state = {
-    count:0
+    count: 0
   };
 
-  increment=()=>{
+  increment = () => {
     this.setState({
-      count:this.state.count +1
+      count: this.state.count + 1
     });
   };
-  decrement=()=>{
+  decrement = () => {
     this.setState({
-      count:this.state.count-1
+      count: this.state.count - 1
     });
   };
 
-  render(){
-    return(
+  render() {
+    return (
       <div className="App">
         <TodoList />
       </div>

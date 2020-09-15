@@ -22,8 +22,8 @@ function App() {
     e.preventDefault();
     navigate(`/${query.query}/${query.id}`)
     setQuery({
-      ...query,
-      [e.target.name]: e.target.value
+      query: "",
+      id: 1
     })
   }
 
