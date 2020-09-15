@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Axios from 'axios';
+// import Axios from 'axios';
 import { Router, navigate } from "@reach/router";
 import StarWarsComp from './components/StarWarsComp';
 
@@ -22,8 +22,8 @@ function App() {
     e.preventDefault();
     navigate(`/${query.query}/${query.id}`)
     setQuery({
-      query: "",
-      id: 1
+      ...query,
+      [e.target.name]: e.target.value
     })
   }
 
