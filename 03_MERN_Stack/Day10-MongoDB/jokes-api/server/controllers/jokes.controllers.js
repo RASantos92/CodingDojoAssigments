@@ -1,5 +1,4 @@
 const { request, response } = require("express");
-// const { response, request } = require("express");
 const Joke = require("../models/jokes.model");
 
 module.exports = {
@@ -21,7 +20,7 @@ module.exports = {
       .catch(err => console.log(err))
   },
   update: (request, response) => {
-    Joke.findOneAndUpdate({ _id: request.params.id }, request.body, { runValidators: true })
+    Joke.findOneAndUpdate({ _id: request.params.id }, request.body, { useFindAndModify: false, runValidators: true }) //or use { new: true}
       .then(jokes => {
         Joke.findOne({ _id: request.params.id })
           .then(jokes => {

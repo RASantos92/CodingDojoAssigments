@@ -1,7 +1,7 @@
 const JokesControllers = require("../controllers/jokes.controllers");
 
 module.exports = app => {
-  app.get("/api/jokes", JokesControllers.index);
+  app.get("/api/jokes", JokesControllers.index);  //dont really need the "jokes" in url (/api/jokes)
   app.post("/api/jokes/new", JokesControllers.create);
   app.get("/api/jokes/show/:id", JokesControllers.show);
   app.put("/api/jokes/update/:id", JokesControllers.update);

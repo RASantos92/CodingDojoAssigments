@@ -85,7 +85,16 @@ const StarWarsComp = props => {
           setError(null);
         }
       })
-      .catch(error => console.log(error));
+      .catch(error => {
+        console.log(error.response.status);
+        setPeople(null);
+        setPlanets(null);
+        setFilms(null);
+        setSpecies(null);
+        setVehicles(null);
+        setStarships(null);
+        setError("These aren't the Droids you're looking for!")
+      });
   }, [props])
 
 

@@ -8,7 +8,7 @@ import StarWarsComp from './components/StarWarsComp';
 
 function App() {
   const [query, setQuery] = useState({
-    query: "",
+    query: "error",
     id: 1
   })
 
@@ -34,7 +34,7 @@ function App() {
 
       < form className="form-inline d-flex justify-content-between mx-auto col-6 p-2 m-5" onSubmit={handleSubmit} ><b>Search for:</b>
         <select name="query" onChange={handleInput}>
-          <option value="">-- Make your selection --</option>
+          <option value="error">-- Make your selection --</option>
           <option value="people">People</option>
           <option value="planets">Planets</option>
           <option value="films">Films</option>

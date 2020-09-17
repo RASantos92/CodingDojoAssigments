@@ -9,13 +9,13 @@ const JokeSchema = new mongoose.Schema({
 	punchline: String
 }, { timestamps: true });
 
-const Joke = mongoose.model("Joke", JokeSchema);
+const Joke = mongoose.model("Joke", JokeSchema);   //this is registering Joke as schema 
 
 module.exports = Joke;
 
 
 // example from the Adriens video
-// const StudentScheme = new mongoose.Schema({
+// const StudentSchema = new mongoose.Schema({
 // 	firstName: {
 // 		type: String,
 // 		required: [true, "First name is required"],
@@ -24,10 +24,10 @@ module.exports = Joke;
 // 	lastName: {
 // 		type: String,
 // 		required: [true, "Last name is required",
-// 			minlength: [2, "Last name must be at least 2 characters"]]
+// 			minlength: [2, "Last name must be at least 2 characters"]
 // 	},
 // 	age: {
-// 		type: Number,
+// 		type: Number,     //can also say here [Number, "Age must be a number"]
 // 		required: [true, "Age is required"],
 // 		min: [14, "A student must be at least 14 years old"]
 // 	}
