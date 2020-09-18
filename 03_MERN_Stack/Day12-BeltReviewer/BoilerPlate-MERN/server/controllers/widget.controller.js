@@ -28,7 +28,13 @@ module.exports = {
             .then(data => res.json({ results: data }))
             .catch(err => res.json(err.errors))
     },
-
+    random: (req, res) => {
+        .then(data => {
+        let rand = Math.floor(Math.random() * data.length);
+        res.json({ results: data[rand] });
+    })
+        .catch(err => res.json(err.errors))
+}
 }
 
 
