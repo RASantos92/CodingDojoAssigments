@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class ListsOfExceptions {
+public class Boxing {
 	
 	public static void main (String[] args) {
 		ArrayList<Object> myList = new ArrayList<Object>();
@@ -27,25 +27,3 @@ public class ListsOfExceptions {
 	}
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

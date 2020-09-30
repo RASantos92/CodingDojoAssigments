@@ -44,7 +44,7 @@ public class Basics {
     }
     public static Integer printTo255Odds(int num){
         while(num<=255){
-            if(num%2 != 0){
+            if(num%2! = 0){
                 System.out.println(num);
                 num++;
             }
