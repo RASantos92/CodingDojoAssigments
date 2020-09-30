@@ -4,10 +4,13 @@ public class Mammal {
 
 	public String name;
 	public String type;
-	public Integer energyLevel = 100;
-	public Boolean throwSomething = true;
-	public Boolean eatBananas = true;
-	public Boolean canClimb = true;
+	public Integer energyLevel;
+	public Boolean throwSomething;
+	public Boolean eatBananas;
+	public Boolean canClimb;
+	public Boolean canFly;
+	public Boolean eatHumans;
+	public Boolean attackTowns;
 
 	public Mammal(String name, String type, int energyLevel) {
 		this.name = name;
@@ -66,6 +69,30 @@ public class Mammal {
 	public void setCanClimb(Boolean canClimb) {
 		this.canClimb = canClimb;
 	}
+//	****************************** <Bat Getters> **********************************************
+	public Boolean getCanFly() {
+		return canFly;
+	}
+
+	public void setCanFly(Boolean canFly) {
+		this.canFly = canFly;
+	}
+
+	public Boolean getEatHumans() {
+		return eatHumans;
+	}
+
+	public void setEatHumans(Boolean eatHumans) {
+		this.eatHumans = eatHumans;
+	}
+
+	public Boolean getAttackTowns() {
+		return attackTowns;
+	}
+
+	public void setAttackTowns(Boolean attackTowns) {
+		this.attackTowns = attackTowns;
+	}
 
 	public String toString() {
 		String output = "";
@@ -75,10 +102,14 @@ public class Mammal {
 		output += "Can Throw?      " + (throwSomething ? "yes" + "\n" : "no" + "\n");
 		output += "Eats Bananas?   " + (eatBananas ? "yes" + "\n" : "no" + "\n");
 		output += "Can Climb?      " + (canClimb ? "yes" + "\n" : "no" + "\n");
+		output += "Can Fly?        " + (canFly ? "yes" + "\n" : "no" + "\n");
+		output += "Eats Humans?    " + (eatHumans ? "yes" + "\n" : "no" + "\n");
+		output += "Attacked Town?  " + (attackTowns ? "yes" + "\n" : "no" + "\n");
+		
 		return output;
 
 	}
-
+//	********************************** <Gorilla actions> ******************************************************
 	public void throwSomething() {
 		if (getThrowSomething() == true) {
 			energyLevel += -5;
@@ -99,5 +130,43 @@ public class Mammal {
 			System.out.println(name + ": Just climbed and lost 10 energy" + "\n");
 		}
 	}
+//	********************************** <Bat actions> ************************************************************
+	public void canFly() {
+		if (getCanFly() == true) {
+			energyLevel += -50;
+			System.out.println(name + ": Just flew and lost 10 energy" + "\n");
+		}
+	}
+	public void eatHuman() {
+		if (getEatHumans() == true) {
+			energyLevel += 25;
+			System.out.println(name + ": Just ate a human and gained 50 energy" + "\n");
+		}
 
+	}
+	public void attackTowns() {
+		if (getAttackTowns() == true) {
+			energyLevel += -100;
+			System.out.println(name + ": Just attacked a town and gained 10 energy" + "\n");
+		}
+
+	}
+
+
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
