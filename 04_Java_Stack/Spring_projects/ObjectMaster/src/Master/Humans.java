@@ -2,6 +2,7 @@ package Master;
 
 public class Humans {
 
+	private static Integer numberOfHumans = 0;
 	public String name;
 	public String type;
 	public Integer strength;
