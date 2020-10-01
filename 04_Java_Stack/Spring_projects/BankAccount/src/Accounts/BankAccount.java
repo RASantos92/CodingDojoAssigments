@@ -21,14 +21,15 @@ public class BankAccount {
 
 	private String accountNumber() {
 
-		String aBC = "abcdefghijklmnopqrstuvwxyz";
+		String aBC = "1234567890";
 		Random rand = new Random();
 		String accountNumber = "";
 		String temp = "";
 		for (int j = 0; j < 10; j++) {
-			temp += aBC.charAt(rand.nextInt(26));
+			temp += aBC.charAt(rand.nextInt(5));
 		}
 		accountNumber = temp;
+
 		return accountNumber;
 	}
 
