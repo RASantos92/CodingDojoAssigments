@@ -3,7 +3,7 @@ package phones;
 public abstract class Phone {
 	public String versionNumber;
 	public int batteryPercentage;
-	private String carrier;
+	public String carrier;
 	public String ringTone;
 
 	public Phone(String versionNumber, String carrier, int batteryPercentage, String ringTone) {

@@ -21,7 +21,7 @@ public class Galaxy extends Phone implements Ringable {
 	public String unlock() {
 		String output = "";
 		output += "unlocking Galaxy via fingerprint scanner" + "\n";
-		output += "Galaxy -" + versionNumber + "- " + this.getCarrier() + " BATTERY @ " + "% " + batteryPercentage + "%"
+		output += "Galaxy -" + versionNumber + "- " + this.getCarrier() + " BATTERY @ " + batteryPercentage + "%"
 				+ "\n";
 		output += "****************************************" + "\n";
 		return output;
@@ -29,6 +29,6 @@ public class Galaxy extends Phone implements Ringable {
 
 	@Override
 	public void displayInfo() {
-		// your code here
+		System.out.println(ringTone() + unlock());
 	}
 }
